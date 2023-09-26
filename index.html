@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Video Player</title>
+  </head>
+  <body>
+    <h1>Video Player</h1>
+    <div id="video-player" class="video-player">
+      <video id="video">
+        <source
+          src="./Video/WhatsApp Video 2023-09-26 at 14.58.12.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="./Video/WhatsApp Video 2023-09-26 at 14.58.12.mp4"
+          type="video/webm"
+        />
+        <p>Your browser doesn't support HTML5 video.</p>
+      </video>
+      <div class="controls">
+        <div class="progress">
+          <div class="progress__filled"></div>
+        </div>
+        <button id="toggleButton" class="controls__button " >
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="prev" class="controls__button " data-skip="-10" >« 10s</button>
+        <button id="next" class="controls__button " data-skip="10" >10s »</button>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
